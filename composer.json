@@ -1,0 +1,16 @@
+{
+    "name": "RWTH-WebTech/ue06-grundgeruest",
+    "license": "CC-BY-SA-4.0",
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "schurix@gmx.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/"
+        }
+    },
+    "require": {}
+}
