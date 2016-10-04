@@ -2,6 +2,7 @@
 namespace Application;
 
 use Application\Page\PageInterface;
+use Application\Page\ProtectedPageInterface;
 
 /**
  * Objektmodell der Webanwendung. Verwaltet die Seiten und die Navigation.

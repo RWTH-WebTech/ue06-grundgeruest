@@ -32,8 +32,8 @@ class Logout implements ProtectedPageInterface{
         return [];
     }
 
-    public function accessAllowed(UserInterface $flatMate = null)
+    public function accessAllowed(UserInterface $user = null)
     {
-        return $flatMate !== null;
+        return $user !== null;
     }
 }
