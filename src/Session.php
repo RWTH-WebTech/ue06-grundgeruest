@@ -60,6 +60,9 @@ class Session {
         if(!password_verify($password, $user->getPassword())){
             return false;
         }
+        if(!$this->loginAllowed($user)){
+            return false;
+        }
         $_SESSION[self::USER_ID_KEY] = $user->getId();
         $this->currentUser = $user;
         return true;
@@ -74,4 +77,13 @@ class Session {
         session_destroy();
     }
 
+
+    /**
+     * Gibt true zurück, wenn der Benutzer sich einloggen darf
+     * @param UserInterface $user
+     * @return bool
+     */
+    public function loginAllowed(UserInterface $user){
+        return true;
+    }
 }
